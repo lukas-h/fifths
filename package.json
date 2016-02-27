@@ -1,0 +1,29 @@
+{
+    "name": "apisimple",
+    "license": "",
+    "private": true,
+    "author": "code for heilbronn",
+    "contributors": [
+        {
+            "name": "Felix Ebert",
+            "email": ""
+        },
+        {
+            "name": "Lukas Himsel",
+            "email": ""
+        },
+        {
+            "name": "Jonathan Günz",
+            "email": ""
+        }
+    ],
+    "version": "0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lukas-h/fifths.git"
+    },
+    "Dependencies": {
+        "jquery": "*",
+        "vexflow": "*"
+    }
+}
