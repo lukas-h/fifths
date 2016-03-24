@@ -20,7 +20,8 @@ var keyMapping = {
 };
 var printKey = function(data){
     var element = document.querySelector('.vex-tabdiv textarea');
-    element.value = 'tabstave tablature=false notation=true clef=treble key=' + keyMapping[data];
+    var tmp = 'tabstave tablature=false notation=true key=' + keyMapping[data] + ' clef=';
+    element.value = tmp + 'treble\n\n' + tmp + 'bass';
     var evt = document.createEvent("HTMLEvents");
     evt.initEvent("keyup", false, true);
     element.dispatchEvent(evt);
