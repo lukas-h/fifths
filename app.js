@@ -59,14 +59,3 @@ gMoll.append("text")
     .attr('dominant-baseline', 'central')
     .text(function(d) { return d.data; });
     
-    
-$(document).ready(function() {
-    var canvas = document.querySelector("canvas");
-    var renderer = new Vex.Flow.Renderer(canvas, Vex.Flow.Renderer.Backends.CANVAS);
-    var ctx = renderer.getContext();
-    var stave = new Vex.Flow.Stave(10, 0, 500);
-    
-    stave.addClef("treble");
-    stave.setContext(ctx).draw();
-    Vex.Flow.Formatter.FormatAndDraw(ctx, stave, notes);
-});
