@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html class="everest-box" style="border-radius: 0px">
 <head>
     <script src="d3.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Quintenzirkel</title>
-    <style>
-        textarea.editor{display:none;}
-    </style>
+    <title>circle of fifths</title>
+<link rel="stylesheet" href="http://www.lukashimsel.me/elementary/css/elementary.css">
+<link rel="stylesheet" href="http://www.lukashimsel.me/style.css">
+<style>
+	textarea.editor{display:none;}
+</style>
 </head>
-<body>
+<body class="box">
+
+
+<h1>Circle of fifths</h1>
+
 <script src="vextab-div.js"></script>
 <script src="app.js"></script>
 <script>Artist.NOLOGO = true;</script>
+
+<div id="circle" style="display: block"></div>
+<p id="major-minor">C major / a minor</p>
+
+
 <div class="vex-tabdiv"
     width=125 scale=1.0 editor="true"
      editor_width=300 editor_height=300>
@@ -20,6 +32,7 @@ tabstave tablature=false notation=true clef=treble key=Ab
 
 tabstave tablature=false notation=true clef=bass key=Ab
 </div>
+
 </body>
 
 </html>

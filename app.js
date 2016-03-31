@@ -9,14 +9,28 @@ var keyMapping = {
     "D": "D",
     "A": "A",
     "E": "E",
-    "H": "B",
-    "Fis": "F#",
-    "Ges": "Gb",
-    "Des": "Db",
-    "As": "Ab",
-    "Es": "Eb",
-    "B": "Bb",
-    "F": "Fb"
+    "B": "B",
+    "F#": "F#",
+    "Gb": "Gb",
+    "Db": "Db",
+    "Ab": "Ab",
+    "Eb": "Eb",
+    "Bb": "Bb",
+    "F": "F",
+	// minor
+    "a": "C",
+    "e": "G",
+    "h": "D",
+    "f#": "A",
+    "c#": "E",
+    "g#": "B",
+    "d#": "F#",
+    "eb": "Gb",
+    "bb": "Db",
+    "f": "Ab",
+    "c": "Eb",
+    "g": "Bb",
+    "d": "F"
 };
 var printKey = function(data){
     var element = document.querySelector('.vex-tabdiv textarea');
@@ -25,6 +39,50 @@ var printKey = function(data){
     var evt = document.createEvent("HTMLEvents");
     evt.initEvent("keyup", false, true);
     element.dispatchEvent(evt);
+
+	var str = 'C major / a minor';
+    switch(keyMapping[data]){
+		case 'C':
+			str = 'C major / a minor';
+		break;
+		case 'G':
+			str = 'G major / e minor';
+		break;
+		case 'D':
+			str = 'D major / h minor';
+		break;
+		case 'A':
+			str = 'A major / fis minor';
+		break;
+		case 'E':
+			str = 'E major / cis minor';
+		break;
+		case 'B':
+			str = 'B major / gis minor';
+		break;
+		case 'F#':
+			str = 'Fis major / dis minor';
+		break;
+		case 'Gb':
+			str = 'Ges major / es minor';
+		break;
+		case 'Db':
+			str = 'Des major / b minor';
+		break;
+		case 'Ab':
+			str = 'As major / f minor';
+		break;
+		case 'Eb':
+			str = 'Es major / c minor';
+		break;
+		case 'Bb':
+			str = 'Bb major / g minor';
+		break;
+		case 'F':
+			str = 'F major / d minor';
+		break;
+	}
+	document.getElementById("major-minor").innerHTML = str;
 }
 
 var width = 500,
@@ -44,8 +102,8 @@ svg.append('circle')
     .attr('fill', 'transparent')
     .attr('stroke', '#000000');
 
-var dur = ['C', 'G', 'D', 'A', 'E', 'H', 'Fis', 'Ges', 'Des', 'As', 'Es', 'B', 'F'];
-var moll = ['a', 'e', 'h', 'fis', 'cis', 'gis', 'dis', 'es', 'b', 'f', 'c', 'g', 'd'];
+var dur = ['C', 'G', 'D', 'A', 'E', 'B', 'F#', 'Gb', 'Db', 'Ab', 'Eb', 'Bb', 'F'];
+var moll = ['a', 'e', 'b', 'f#', 'c#', 'g#', 'd#', 'eb', 'bb', 'f', 'c', 'g', 'd'];
 
 var pie = d3.layout.pie()
     .sort(null)
