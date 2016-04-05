@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"><meta charset="utf-8" />
+<title>Circle of fifths</title>
+<link rel="stylesheet" href="custom-style.css">
+<script src="./mdl/material.min.js"></script>
+<script src="d3.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Oswald|PT+Sans' rel='stylesheet' type='text/css'>
+<style>
+	h1, h2, h3, h4, h5, h6{font-family: 'Oswald' !important}
+	 p, a {font-family: 'PT Sans' !important}
+	 span.mdl-layout-title {font-family: 'Oswald' !important}
+	textarea.editor{display:none;}
+</style>
+</head>
+
+<body>
+
+<script src="vextab-div.js"></script>
+	
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Circle of fifths</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="http://www.lukashimsel.me">Home</a>
+        <a class="mdl-navigation__link" href="./about.html">About</a>
+        <a class="mdl-navigation__link" href="https://github.com/lukas-h/fifths"><i class="fa fa-github"></i> Github</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer" style="font-family: 'Oswald' !important;">
+    <span class="mdl-layout-title">Circle of <span style="color: red;">fifths</span></span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="http://www.lukashimsel.me">Home</a>
+      <a class="mdl-navigation__link" href="./about.html">About</a>
+      <a class="mdl-navigation__link" href="https://github.com/lukas-h/fifths"><i class="fa fa-github"></i> Github</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+
+<div class="mdl-grid">
+
+<!-- circle cell -->
+<div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet">
+	<script src="app.js"></script>
+	<div id="circle" style="display: block"></div>
+</div>
+
+<!-- notes cell -->
+<div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet">
+	
+<script>Artist.NOLOGO = true;</script>
+<p id="major-minor">C major / a minor</p>
+
+	  <div class="vex-tabdiv"
+    width=125 scale=1.0 editor="true"
+     editor_width=300 editor_height=300>
+tabstave tablature=false notation=true clef=treble key=Ab
+
+tabstave tablature=false notation=true clef=bass key=Ab
+	</div>
+</div>
+
+</div>
+		
+    </div>
+  </main>
+  <footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo" style="font-family: 'Oswald' !important; font-size: 20px;">Circle of <span style="color: red">fifths</span></div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="https://github.com/lukas-h/fifths"><i class="fa fa-code"></i> Open Source</a></li>
+      <li><a href="http://www.lukashimsel.me/about.html">Imprint</a></li>
+      <li><a href="./about.html" style="font-family: 'Oswald' !important; font-size: 20px;">About</li>
+    </ul>
+  </div>
+</footer>
+</div>
+</body>
+
+</html>
