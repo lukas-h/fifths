@@ -89,7 +89,7 @@ var width = 500,
     height = 500,
     radius = Math.min(width, height) / 2;
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#circle").append("svg")
     .attr("width", width)
     .attr("height", height)
     .append("g")

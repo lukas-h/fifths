@@ -12,9 +12,11 @@
 <link href='https://fonts.googleapis.com/css?family=Oswald|PT+Sans' rel='stylesheet' type='text/css'>
 <style>
 	h1, h2, h3, h4, h5, h6{font-family: 'Oswald' !important}
+	h1{font-size: 40px;}
 	 p, a {font-family: 'PT Sans' !important}
 	 span.mdl-layout-title {font-family: 'Oswald' !important}
 	textarea.editor{display:none;}
+	.page-content{ padding: 0px 100px;}
 </style>
 </head>
 
@@ -27,14 +29,13 @@
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">Circle of fifths</span>
+      <span class="mdl-layout-title">lukashimsel.me/fifths</span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
         <a class="mdl-navigation__link" href="http://www.lukashimsel.me">Home</a>
-        <a class="mdl-navigation__link" href="./about.html">About</a>
-        <a class="mdl-navigation__link" href="https://github.com/lukas-h/fifths"><i class="fa fa-github"></i> Github</a>
+        <a class="mdl-navigation__link" href="https://en.wikipedia.org/wiki/Circle_of_fifths">What's a circle of fifths?</a>
       </nav>
     </div>
   </header>
@@ -42,19 +43,18 @@
     <span class="mdl-layout-title">Circle of <span style="color: red;">fifths</span></span>
     <nav class="mdl-navigation">
       <a class="mdl-navigation__link" href="http://www.lukashimsel.me">Home</a>
-      <a class="mdl-navigation__link" href="./about.html">About</a>
-      <a class="mdl-navigation__link" href="https://github.com/lukas-h/fifths"><i class="fa fa-github"></i> Github</a>
+        <a class="mdl-navigation__link" href="https://en.wikipedia.org/wiki/Circle_of_fifths">What's a circle of fifths?</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
     <div class="page-content">
-
+<h1>Circle of <span style="color: red">fifths</span></h1>
 <div class="mdl-grid">
 
 <!-- circle cell -->
 <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet">
 	<script src="app.js"></script>
-	<div id="circle" style="display: block"></div>
+	<span id="circle"></span>
 </div>
 
 <!-- notes cell -->
@@ -80,9 +80,9 @@ tabstave tablature=false notation=true clef=bass key=Ab
   <div class="mdl-mini-footer__left-section">
     <div class="mdl-logo" style="font-family: 'Oswald' !important; font-size: 20px;">Circle of <span style="color: red">fifths</span></div>
     <ul class="mdl-mini-footer__link-list">
-      <li><a href="https://github.com/lukas-h/fifths"><i class="fa fa-code"></i> Open Source</a></li>
+      <li><a href="https://github.com/lukas-h/fifths"><i class="fa fa-github"></i> Open Source</a></li>
       <li><a href="http://www.lukashimsel.me/about.html">Imprint</a></li>
-      <li><a href="./about.html" style="font-family: 'Oswald' !important; font-size: 20px;">About</li>
+      <li><a href="https://github.com/lukas-h/fifths/blob/gh-pages/README.md#contributors" style="font-family: 'Oswald' !important; font-size: 20px;">About</li>
     </ul>
   </div>
 </footer>
