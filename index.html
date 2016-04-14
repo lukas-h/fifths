@@ -16,7 +16,14 @@
 	 p, a {font-family: 'PT Sans' !important}
 	 span.mdl-layout-title {font-family: 'Oswald' !important}
 	textarea.editor{display:none;}
-	.page-content{ padding: 0px 100px;}
+
+	@media (max-width: 760px){
+		.page-content{ padding: 0px 10px; }
+	}
+	@media (min-width: 760px){
+		.page-content{ padding: 0px 100px;}
+	}
+	#circle svg rect{ cursor: pointer; }
 </style>
 </head>
 
