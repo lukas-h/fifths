@@ -1,3 +1,2 @@
 # fifths
-
-see running on [http://www.lukashimsel.me/fifths/](http://www.lukashimsel.me/fifths/)
+use it on [himsel.me/fifths](http://www.lukashimsel.me/fifths/)
